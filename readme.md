@@ -1,4 +1,4 @@
-Name - Shona Okereke
+Name - Shona O
 Description of project - Web Dev Project 2
                         -Apply knowledge of concepts of Advanced CSS, jQuery and Bootstrap.
                         -Researching API's and attaining a key in order to receive user
