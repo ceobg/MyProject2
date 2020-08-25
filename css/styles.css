@@ -1,0 +1,359 @@
+/***************************
+Reset and Base Imports
+***************************/
+@import url("https://fonts.googleapis.com/css?family=Raleway|Ubuntu|Dosis");
+@media (max-width: 767px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .column {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 575.98px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/***************************
+****************************
+Base and Reset
+****************************
+***************************/
+/* HTML Elements */
+html {
+  font-family: Raleway;
+}
+
+/***************************
+****************************
+Base Styles
+****************************
+***************************/
+body {
+  font-family: Raleway;
+  background: -webkit-gradient(linear, left top, right top, from(#b2a2ee), color-stop(#fa9a41), color-stop(#ffc401), color-stop(#ffd54b), to(#a15dce));
+  background: linear-gradient(to right, #b2a2ee, #fa9a41, #ffc401, #ffd54b, #a15dce);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: Raleway;
+  background: -webkit-repeating-linear-gradient(#8300da, #fd00c6, #f06408, #f7c10f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-family: Raleway;
+  color: #0e0d0d;
+}
+
+h3 {
+  font-family: Raleway;
+  color: #24e4eb;
+}
+
+h4 {
+  font-family: Dosis;
+  color: #ff18c5;
+}
+
+h6 {
+  font-family: Raleway;
+  background: -webkit-repeating-linear-gradient(#8300da, #fd00c6, #f06408, #f7c10f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-family: Ubuntu;
+  background: -webkit-gradient(linear, left top, right top, from(#fd00c6), color-stop(#f06408), to(#f7c10f));
+  background: linear-gradient(to right, #fd00c6, #f06408, #f7c10f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f181f1), color-stop(#829bee), to(#b93ff1));
+  background-image: linear-gradient(to right, #f181f1, #829bee, #b93ff1);
+}
+
+/* Footer Style */
+#footerbg {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fd00c6), color-stop(#f06408), color-stop(#f7c10f), to(#8300da));
+  background-image: linear-gradient(to right, #fd00c6, #f06408, #f7c10f, #8300da);
+}
+
+/***************************
+Layout Imports
+***************************/
+/***************************
+****************************
+Layout Styles
+****************************
+***************************/
+/* Jumbotron */
+.jumbotron {
+  color: black;
+  background: #8300da;
+  font-family: Raleway;
+  font-size: 28px;
+}
+
+/* Content Container*/
+.container {
+  font-family: Raleway;
+}
+
+/* Row */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Column*/
+.column {
+  -webkit-box-flex: 33.33%;
+      -ms-flex: 33.33%;
+          flex: 33.33%;
+  padding: 5px;
+}
+
+/* Module Styles */
+.module {
+  font-family: Raleway;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(#eb9beb), color-stop(#a7b8f1), to(#eb9beb));
+  background: linear-gradient(to right, #eb9beb, #a7b8f1, #eb9beb);
+  color: black;
+  padding: 2rem;
+}
+
+.module-border-wrap {
+  border-radius: 15px;
+  max-width: 700px;
+  padding: 1rem;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#8300da), color-stop(#fd00c6), color-stop(#f06408), to(#f7c10f));
+  background: linear-gradient(to right, #8300da, #fd00c6, #f06408, #f7c10f);
+  padding: 8px;
+}
+
+/***************************
+Image Imports
+***************************/
+/***************************
+****************************
+Image Styles
+****************************
+***************************/
+.img-box {
+  height: 150px;
+  width: 150px;
+  border: 1px #e47bee;
+}
+
+.img-body {
+  margin: 5px;
+}
+
+/***************************
+Navigation Imports
+***************************/
+/***************************
+****************************
+  Navigation Bar Styles
+****************************
+***************************/
+.dropdown-menu {
+  background: -webkit-gradient(linear, left top, right top, from(#eb9beb), color-stop(#a7b8f1), to(#eb9beb));
+  background: linear-gradient(to right, #eb9beb, #a7b8f1, #eb9beb);
+}
+
+.navbar ul {
+  color: blueviolet;
+}
+
+.navbar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+
+.navbar li {
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 7px 0;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f181f1), color-stop(#829bee), to(#b93ff1));
+  background-image: linear-gradient(to right, #f181f1, #829bee, #b93ff1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar ::before {
+  content: "";
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  right: 60%;
+  left: 60%;
+  bottom: 0;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(#8300da), color-stop(#fd00c6), color-stop(#f06408), to(#f7c10f));
+  background: linear-gradient(to right, #8300da, #fd00c6, #f06408, #f7c10f);
+}
+
+.navbar a:hover::before {
+  color: #f83d9a;
+  background-color: transparent;
+  right: 0;
+  left: 0;
+}
+
+.navbar :link {
+  color: #9900ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.navbar :visited {
+  color: #f83d9a;
+  background-color: red;
+  text-decoration: none;
+}
+
+.navbar :active {
+  color: #ff7300;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #f17108;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.search_input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 40px;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+  padding: 0 10px;
+  width: 450px;
+  caret-color: #ff15eb;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+  background: #99eb02;
+  color: #00ffff;
+}
+
+.search_icon {
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: #9603f8;
+  text-decoration: none;
+}
+
+.form-control {
+  display: center;
+  text-align: center;
+}
+
+/* Change this breakpoint if you change the breakpoint of the navbar */
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+/*# sourceMappingURL=styles.css.map */
